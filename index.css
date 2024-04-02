@@ -6,4 +6,167 @@
    font-style: normal;
    -webkit-font-smoothing: antialiased;
    -moz-osx-font-smoothing: grayscale;
- }
+}
+
+body{
+  min-width: fit-content;
+}
+
+.row{
+  margin: 0!important;
+}
+
+ul {
+   list-style-type: none;
+   margin: 0!important;
+}
+
+a {
+   text-decoration: none;
+}
+
+.header {
+   margin: 0;
+   position: fixed;
+   width: 100%;
+   z-index: 1000;
+   background: #000;
+   background: #fff;
+   box-shadow: 0 10px 100px rgba(0, 0, 0, 0.1);
+}
+
+.header__content {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   padding: 1rem 5rem;
+}
+
+@media only screen and (max-width: 425px) {
+  .header__content {
+      padding:0 2rem
+  }
+}
+
+.header__logo-container {
+   display: flex;
+   align-items: center;
+   cursor: pointer;
+   color: #333;
+   transition: color 0.3s;
+}
+
+.header__logo-container:hover {
+   color: #7843e9;
+}
+
+.header__logo-img-cont {
+   width: 5rem;
+   height: auto;
+   border-radius: 50px;
+   overflow: hidden;
+   margin-right: 1.5rem;
+   background: #7843e9;
+}
+
+.header__logo-img {
+   width: 100%;
+   height: auto;
+   -o-object-fit: cover;
+   object-fit: cover;
+   -o-object-position: center;
+   object-position: center;
+   display: block;
+}
+
+.header__logo-sub {
+   font-size: 1.5rem;
+   text-transform: uppercase;
+   font-weight: 700;
+   letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 425px) {
+  .header__logo-img-cont {
+      width:4.5rem;
+      height: auto;
+      margin-right: 1.2rem
+  }
+}
+
+.header__main{
+  padding-right: 2em;
+}
+
+.header__links {
+   display: flex;
+}
+
+.header__link {
+   padding: 2.2rem 3rem;
+   display: inline block;
+   margin: 0;
+   font-size: 1rem;
+   color: #333;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   font-weight: 700;
+   transition: color 0.3s;
+}
+
+.header__link:hover {
+   color: #7843e9;
+}
+
+@media only screen and (max-width: 1024px) {
+  .header__link {
+      padding:3rem 1rem;
+      font-size: 1rem
+  }
+}
+@media only screen and (max-width: 768px) {
+  .header__links {
+      display:none
+  }
+}
+
+.main__body {
+   background: url("./img/background.avif");
+   background-position: center;
+   min-height: 1rem;
+   max-height: 120rem;
+   width: 100%;
+   height: 100vh;
+   position: relative;
+}
+
+.body__content {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   max-width: 90rem;
+   width: 92%;
+}
+
+.body__heading {
+   font-size: 4rem;
+   text-transform: uppercase;
+   letter-spacing: 3px;
+   text-align: center;
+   color: #111;
+   font-weight: 800;
+}
+
+.body__info {
+   margin: 3rem auto 0 auto;
+   max-width: 80rem;
+}
+
+.body__info-text {
+   color: #333;
+   font-size: 1.5rem;
+   text-align: center;
+   width: 100%;
+   line-height: 1.6;
+}

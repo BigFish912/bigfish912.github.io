@@ -9,6 +9,7 @@
       <meta name="description" content="Professional Portfolio Website" />
       <meta name="author" content="Christopher Snow" />
       <link rel="icon" href="./favicon.ico" />
+      <link rel="stylesheet" href="./index.css" />
       <!-- Font Awesome CSS -->
       <link
          rel="stylesheet"
@@ -25,7 +26,7 @@
          href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
          rel="stylesheet"
       />
-      <link rel="stylesheet" href="./index.css" />
+
       <!-- Scripts -->
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script
@@ -45,30 +46,37 @@
       <script src="js/smooth_scrolling.js"></script>
    </head>
    <body>
-      <div className="row">
-         <div className="header__content">
-            <div className="header__logo-container">
-               <div className="header__logo-img-cont"></div>
-               <span className="header__logo-sub">Christopher Snow</span>
+      <div class="row header">
+         <div class="header__content">
+            <div class="header__logo-container">
+               <div class="header__logo-img-cont">
+                  <img class="header__logo-img" src="./img/profilePic.jpg" />
+               </div>
+               <span class="header__logo-sub">Christopher Snow</span>
             </div>
-            <div className="header__main">
-               <Hamburger toggled="{isOpen}" toggle="{setOpen}" />
-               <ul className="header__links">
-                  <li className="header__link-wrapper">
-                     <a href="./" className="header__link"> Home </a>
+            <div class="header__main">
+               <ul class="header__links">
+                  <li class="header__link-wrapper">
+                     <a href="./" class="header__link"> Home </a>
                   </li>
-                  <li className="header__link-wrapper">
-                     <a href="./#about" className="header__link"> About </a>
+                  <li class="header__link-wrapper">
+                     <a href="./#about" class="header__link"> About </a>
                   </li>
-                  <li className="header__link-wrapper">
-                     <a href="./#projects" className="header__link">
-                        Projects
-                     </a>
+                  <li class="header__link-wrapper">
+                     <a href="./#projects" class="header__link"> Projects </a>
                   </li>
-                  <li className="header__link-wrapper">
-                     <a href="./#contact" className="header__link"> Contact </a>
+                  <li class="header__link-wrapper">
+                     <a href="./#contact" class="header__link"> Contact </a>
                   </li>
                </ul>
+            </div>
+         </div>
+      </div>
+      <div class="main__body">
+         <div class="body__content">
+            <h1 class="body__heading">Hi, I'm Chris</h1>
+            <div class="body__info">
+               <p class="body__info-text">This is a little bit about me</p>
             </div>
          </div>
       </div>
